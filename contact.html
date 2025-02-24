@@ -27,9 +27,8 @@
     />
   </head>
   <body class="bg-black">
-      <!-- Container -->
-      <div class="container">
-    
+    <!-- Container -->
+    <div class="container">
       <!-- Navigation -->
       <nav class="navbar">
         <a href="./index.html">
@@ -44,43 +43,65 @@
         <div class="navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
-          <a href="#">Blog</a>
+          <a href="./blog.html">Blog</a>
           <a href="./about.html">About</a>
           <a href="./shop.html">Shop</a>
-          <a href="./contact.html">Contact</a>
+          <a href="#">Contact</a>
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
       </nav>
       <!-- End of Navigation -->
-       <form class="search-form">
+       <!-- Contact -->
+      <section class="contactpage">
+        <div class="contact-content">
+          <div class="contactpage-right">
+            <form>
+              <div class="contact-input-groups">
+                <div class="contact-input-group">
+                  <label for="name"
+                    >Your full name <i class="fa-solid fa-asterisk"></i
+                  ></label>
+                  <input type="text" />
+                </div>
+                <div class="contact-input-group">
+                  <label for="email"
+                    >Your email address <i class="fa-solid fa-asterisk"></i
+                  ></label>
+                  <input type="email" />
+                </div>
+              </div>
+              <div class="contact-input-group">
+                <label for="subject"
+                  >Your subject <i class="fa-solid fa-asterisk"></i
+                ></label>
+                <input type="text" />
+              </div>
+              <div class="contact-input-group">
+                <label for="message"
+                  >Your message <i class="fa-solid fa-asterisk"></i
+                ></label>
+                <textarea></textarea>
+              </div>
+              <button type="button" class="contactpage-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End of Contact -->
 
-      <input
-        type="text"
-        placeholder="search your favorite cocktail"
-        name="drink"
-      />
-    </form>
-    <section class="section cocktails">
-      <article class="loading">
-        <img src="./images/loading.gif" alt="loading" />
-      </article>
-      <h2 class="title"></h2>
-      <div class="section-center"></div>
-    </section>
+
       <!-- Footer -->
       <footer>
         <p class="copyright">
           copyright &copy; <span id="date"></span>
-        All Rights Reserved. Made by Isaiah P.
+          All Rights Reserved. Made by Isaiah P.
         </p>
       </footer>
       <!-- End of Footer -->
-    
-    <!-- End of Container -->
     </div>
+    <!-- End of Container -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
-    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
